@@ -1,3 +1,4 @@
+
 """Automatikus tesztek a Feladatkártya #1-hez. Ezeket futtatja a CI minden push után."""
 import sys
 from pathlib import Path
@@ -8,6 +9,8 @@ ROOT = Path(__file__).resolve().parent.parent
 
 
 def read_requirements():
+    if not (ROOT / "requirements.txt").exists():
+    return ""
     # A régebbi PowerShell ">" átirányítása UTF-16-ot ír, ezért mindkét kódolást elfogadjuk.
     raw = (ROOT / "requirements.txt").read_bytes()
     for enc in ("utf-8-sig", "utf-16"):
