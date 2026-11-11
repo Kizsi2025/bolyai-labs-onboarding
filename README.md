@@ -8,10 +8,15 @@
 - [ ] a `numpy` és a `pandas` telepítve, a `check_env.py` hiba nélkül lefut
 - [ ] a `requirements.txt` feltöltve, és tartalmazza mindkét csomagot
 - [ ] a CI-futás zöld (Actions fül)
+- [ ] a repó linkje beadva a Teams-feladatba
 
 **Határidő:** a 2. óra vége · **Érték:** 5 sprintpont (zöld build 2, határidő 1, commitüzenet 1, kilépőkérdések 1)
 
-## Lépések (Windows, PowerShell)
+## Lépések
+
+**0. Saját repó a sablonból:** ezen az oldalon kattints a **Use this template → Create a new repository** gombra. Név: osztálykód és sorszám, teljes név nélkül (pl. `onboarding-13b-07`), láthatóság: **Public**.
+
+**1–6. A környezet és az első commit (Windows, PowerShell):**
 
 ```powershell
 git clone <a saját repód címe>
@@ -32,6 +37,8 @@ Linuxon és macOS-en az aktiválás `source .venv/bin/activate`, a requirements.
 
 A `check_env.py` kimenetének végén ezt kell látnod: `Átlagos válaszidő: 663.3 ms` és `A környezet rendben van.`
 
+**7. Zöld build és beadás:** a push után a repód **Actions** fülén megvárod, hogy zöld legyen a futás, majd a repód linkjét beadod a Teams-feladatba.
+
 ## Ha elakadsz
 
 | Tünet | Megoldás |
@@ -45,7 +52,7 @@ A `check_env.py` kimenetének végén ezt kell látnod: `Átlagos válaszidő: 6
 
 ## B-terv: Colab
 
-Ha a 25. percre sem áll fel a helyi környezet: Colabban **File → Open notebook → GitHub** fül, jelöld be az **Include private repos** lehetőséget, nyisd meg az `onboarding_colab.ipynb`-t, futtasd, majd **File → Save a copy in GitHub**. A helyi környezetet a 2. blokk első 10 percében pótolod.
+Ha a 25. percre sem áll fel a helyi környezet: Colabban **File → Open notebook → GitHub** fül, keress rá a GitHub-felhasználónevedre, nyisd meg az `onboarding_colab.ipynb`-t, futtasd, majd **File → Save a copy in GitHub**. A helyi környezetet a 2. blokk első 10 percében pótolod.
 
 ## Két szabály egész évre
 
